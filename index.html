@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <!-- daisy UI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="bg-slate-300">
+            <div class="container mx-auto navbar">
+                <div class="flex-1">
+                    <a class="btn btn-ghost text-xl">Travel Agency</a>
+                </div>
+                <div class="flex-none">
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <div class="indicator">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                <span id="cart-count" class="badge badge-sm indicator-item">0</span>
+                            </div>
+                        </div>
+                        <div tabindex="0" class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                            <div class="card-body">
+                                <span class="text-lg font-bold">8 Items</span>
+                                <span class="text-info">Subtotal: $999</span>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary btn-block"><a href="./cart.html">View
+                                            cart</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                            <div class="w-10 rounded-full">
+                                <img alt="Tailwind CSS Navbar component" src="./images/user.png" />
+                            </div>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li>
+                                <a class="justify-between">
+                                    Profile
+                                    <span class="badge">New</span>
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Product section -->
+        <section class="container mx-auto my-5">
+            <h1 class="text-5xl font-bold text-center my-5">Our Popular Places</h1>
+            <div>
+                <h2>Total Cost</h2>
+                <div class="flex">
+                    <p>Sajek Valley</p>
+                    <p>$ 600</p>
+                </div>
+                <hr class="border-red-200">
+            </div>
+            <div class="flex gap-4 justify-around items-center">
+                <div>
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure class="px-5 pt-10">
+                            <img src="./images/img1.jpg" alt="Shoes" class="rounded-xl w-full" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-4">
+                            <h2 class="text-2xl font-bold">Cox's Bazar</h2>
+                            <p class="text-xl font-medium">Budget: $ <span>400</span></p>
+                            <div class="card-actions">
+                                <button id="cart-btn"
+                                    class="cart-btn btn btn-primary bg-red-400 border-none text-white hover:bg-red-500">Add
+                                    to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure class="px-5 pt-10">
+                            <img src="./images/img2.jpg" alt="Shoes" class="rounded-xl w-full" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-4">
+                            <h2 class="text-2xl font-bold">Saint Martin</h2>
+                            <p class="text-xl font-medium">Budget: $ <span>500</span></p>
+                            <div class="card-actions">
+                                <button id="cart-btn"
+                                    class="cart-btn btn btn-primary bg-red-400 border-none text-white hover:bg-red-500">Add
+                                    to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure class="px-5 pt-10">
+                            <img src="./images/img3.jpg" alt="Shoes" class="rounded-xl w-full" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-4">
+                            <h2 class="text-2xl font-bold">Sajek Valley</h2>
+                            <p class="text-xl font-medium">Budget: $ <span>600</span></p>
+                            <div class="card-actions">
+                                <button id="cart-btn"
+                                    class="cart-btn btn btn-primary bg-red-400 border-none text-white hover:bg-red-500">Add
+                                    to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure class="px-5 pt-10">
+                            <img src="./images/img4.jpg" alt="Shoes" class="rounded-xl w-full" />
+                        </figure>
+                        <div class="card-body items-center text-center space-y-4">
+                            <h2 class="text-2xl font-bold">Tea Garden</h2>
+                            <p class="text-xl font-medium">Budget: $ <span>400</span></p>
+                            <div class="card-actions">
+                                <button id="cart-btn"
+                                    class="cart-btn btn btn-primary bg-red-400 border-none text-white hover:bg-red-500">Add
+                                    to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- After practice the main part, I can do it. -->
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
